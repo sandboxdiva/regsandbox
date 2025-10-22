@@ -29,6 +29,9 @@ jobs:
       - name: Install deps
         run: npm install
 
+      - name: Ensure vite react plugin (hotfix)
+        run: npm install -D @vitejs/plugin-react
+
       - name: Build
         run: npm run build
 
